@@ -27,7 +27,7 @@ To run tests execute `dart test` in the root directory of the project.
 
 ```bash
 # Easy way to build & run
-$ dart run
+$ dart run bin/dchat.dart
 
 # Show help
 $ dart run bin/dchat.dart --help
