@@ -1,11 +1,13 @@
 import 'dart:io';
 
 import 'package:args/command_runner.dart';
+import 'package:dchat/command/models_command.dart';
 import 'package:dchat/command/prompt_command.dart';
 
 Future<void> main(List<String> args) async {
   final runner = CommandRunner("dchat", "Command line AI chat")
     ..addCommand(PromptCommand())
+    ..addCommand(ModelsCommand())
     ..argParser.addFlag('verbose', abbr: 'v', help: 'increase logging');
 
   try {
