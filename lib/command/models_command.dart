@@ -28,7 +28,10 @@ class ModelsCommand extends CommandBase {
     final config = await reader.read();
     print("DEBUG: Configuration file read");
 
+    // TODO get list and use printer abstraction
     await requestModels(config);
+
+    // TODO if error fail
     return 0;
   }
 }

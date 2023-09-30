@@ -1,3 +1,7 @@
+abstract class IConfiguration {}
+
 abstract class IConfigurationReader {}
 
-abstract class IConfiguration {}
+class PromptConfig {
+  final continueChat = false; // TODO for testing
+}
